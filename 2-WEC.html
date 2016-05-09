@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML5 Layout</title>
+		<style type="text/css">
+			header, section, footer, aside, nav, article, figure, figcaption {
+				display: block;}
+			body {
+				color: #666666;
+				background-color: #f9f8f6;
+				background-image: url("images/dark-wood.jpg");
+				background-position: center;
+				font-family: Georgia, Times, serif;
+				line-height: 1.4em;
+				margin: 0px;}
+			.wrapper {
+				width: 940px;
+				margin: 20px auto 20px auto;
+				border: 2px solid #000000;
+				background-color: #ffffff;}
+			header {
+				height: 240px;
+				background-image: url(images/header.png);}
+			h1 {
+				text-indent: -9999px;
+				width: 940px;
+				height: 220px;
+				margin: 0px;}
+			nav, footer {
+				clear: both;
+				color: #ffffff;
+				background-color: #059ADF;
+				height: 30px;}
+			nav ul {
+				margin: 0px;
+				padding: 5px 0px 5px 30px;
+				}
+			ul {
+				list-style-position: inside;
+			}
+			nav li {
+				display: inline;
+				margin-right: 40px;}
+			nav li a {
+				color: #ffffff;}
+			nav li a:hover, nav li a.current {
+				color: #000000;}
+			section.content {
+				float: left;
+				width: 940px;
+				border-right: 1px solid #eeeeee;}
+			article {
+				clear: both;
+				overflow: auto;
+				width: 97%;
+				margin-left: 20px;
+				margin-right: 20px;}
+			hgroup {
+				margin-top: 40px;
+				}
+			figure {
+				float: left;
+				width: 290px;
+				height: 220px;
+				padding: 5px;
+				margin: 20px;
+				border: 1px solid #eeeeee;}
+			figcaption {
+				font-size: 90%;
+				text-align: left;}
+			aside {
+				width: 230px;
+				float: left;
+				padding: 0px 0px 0px 20px;}
+			aside section a {
+				display: block;
+				padding: 10px;
+				border-bottom: 1px solid #eeeeee;}
+			aside section a:hover {
+				color: #985d6a;
+				background-color: #efefef;}
+			a {
+				color: #de6581;
+				text-decoration: none;}
+			h1, h2, h3 {
+				font-weight: normal;}
+			h2 {
+				margin: 10px 0px 5px 0px;
+				padding: 0px;}
+			h3 {
+				margin: 0px 0px 10px 0px;
+				color: #de6581;}
+			aside h2 {
+				padding: 30px 0px 10px 0px;
+				color: #de6581;}
+			footer {
+				font-size: 80%;
+				padding: 7px 0px 0px 20px;}
+			img.align-left	{
+				float: left;
+				margin-right: 10px;}
+			img.align-right	{
+				float: right;
+				margin-left: 10px;
+				margin-right: 30px;}
+			img.medium {
+				width: 250px;
+				height: 250px;}				
+		</style>
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<h1>Waves</h1>
+				<nav>
+					<ul>
+						<li><a href="1-frontpage.html" class="current">Wave Energy</a></li>
+						<li><a href="2-WEC.html">WEC Devices</a></li>
+						<li><a href="3-WaveDragon.html">Wave Dragon</a></li>
+						<li><a href="4-contact.html">Contact</a></li>
+						<li><a href="5-references.html">References</a></li>
+					</ul>
+					</ul>
+				</nav>
+			</header>
+			<section class="content">
+				<article>
+					<hgroup>
+						<h2>WEC Devices</h2>
+					</hgroup>
+					<p>Wave Energy Converter (WEC) is type of device that can take the advantage of wave energy and transform it into electrical power. WEC can be classified according to their operating location and operating modes. 
+					</p>
+					<p>We have identified eight main types of WEC:</p>
+					<hgroup>
+						<h4>A) ATTENUATOR</h4>
+					</hgroup>					
+					<p><img src="images/Attenuator.gif" alt="Attenuator" class="align-right" />An attenuator is a floating device which operates parallel to the wave direction and effectively rides the waves. These devices capture energy from the relative motion of the two arms as the wave passes them.
+					</p>
+				</article>
+				<article>
+					<hgroup>
+						<h4>B) POINT ABSORBER</h4>
+					</hgroup>					
+					<p><img src="images/point-absorber1.gif" alt="Point-Absorber" class="align-right" />A point absorber is a floating structure which absorbs energy from all directions through its movements at/near the water surface. It converts the motion of the buoyant top relative to the base into electrical power. The power take-off system may take a number of forms, depending on the configuration of displacers/reactors.
+					</p>
+				</article>
+
+				<article>
+					<hgroup>
+						<h4>C) OSCILLATING WAVE SURGE CONVERTER</h4>
+					</hgroup>					
+					<p><img src="images/owsc1.gif" alt="Point-Absorber" class="align-right" />
+					Oscillating wave surge converters extract energy from wave surges and the movement of water particles within them. It consists of two components: a sea bed fixed air-filled cylindrical chamber and a moveable upper cylinder. While under the crest, the water pressure above the device increases and moves the upper cylinder down. While under a trough, the water pressure on the device reduces and raises upper cylinder. An advantage of this operating mode is that the submerged arrangement can avoid the slamming forces, which is usually experienced by floating devices.However, drawback of this mode is the difficulty of maintenance. These devices are located nearshore.
+					</p>	
+					<img src="images/surge_design.jpg" alt="Point-Absorber" class="align-left" height="300" width="480" />				
+				</article>
+
+				<article>
+					<hgroup>
+						<h4>D) OSCILLATING WATER COLUMN</h4>
+					</hgroup>					
+					<p><img src="images/oscillating-water-column1.gif" alt="Point-Absorber" class="align-right" />The OWC concept has been proposed as a nearshore device by Oceanlinx. An typical OWC consists of a chamber with an open gate to the sea below the water surface. While waves approach the device, forcing the water into the chamber and applying pressure on the air within the chamber to escape to atmosphere through the turbine. While the water retreats, air is then drawn back through the turbine. The advantage of the OWC is its simplicity and robustness. An example of a shoreline mounted device is the Wavegen Limpet installed on the island of Islay, Western Scotland, producing electricity for the national grid. 					
+					</p>
+					<img src="images/os_water_col.jpg" alt="Point-Absorber" class="align-left" height="300" width="480" />	
+					
+				</article>
+
+				<article>
+					<hgroup>
+						<h4>E) OVERTOPPING/TERMINATOR DEVICE</h4>
+					</hgroup>					
+					<p><img src="images/overtoppingdevice-preview1.gif" alt="Point-Absorber" class="align-right" />An overtopping device gathers incident waves in a reservoir above the sea level and releases the water back with turbines. This kind of device uses a pair of large curved reflectors to capture waves into the center part, with the water flowing up a ramp and over the top into a raised reservoir. The water is allowed to return to the sea through a number of low-head turbines.
+					</p>
+					<img src="images/over_top.jpg" alt="Point-Absorber" class="align-left" height="300" width="560" />	
+				</article>				
+
+				<article>
+					<hgroup>
+						<h4>F) SUBMERGED PRESSURE DIFFERENTIAL</h4>
+					</hgroup>					
+					<p><img src="images/submergedpressuredifferential1.gif" alt="Point-Absorber" class="align-right" />Submerged pressure differential devices are typically located near shore and attached to the seabed. The motion of the waves causes the sea level to rise and fall above the device, inducing a pressure differential in the device. The alternating pressure pumps fluid through a system to generate electricity.
+					</p>
+				</article>	
+
+				<article>
+					<hgroup>
+						<h4>G) BULGE WAVE</h4>
+					</hgroup>					
+					<p><img src="images/Bulge-Wave1.gif" alt="Point-Absorber" class="align-right" />Bulge wave technology consists of a rubber tube filled with water, moored to the seabed heading into the waves. The water enters through the stern and the passing wave causes pressure variations along the length of the tube, creating a 'bulge'. As the bulge travels through the tube it grows, gathering energy which can be used to drive a standard low-head turbine located at the bow, where the water then returns to the sea.
+					</p>
+				</article>	
+
+
+				<article>
+					<hgroup>
+						<h4>H) ROTATING MASS</h4>
+					</hgroup>					
+					<p><img src="images/Gyroscope1.gif" alt="Point-Absorber" class="align-right" />Two forms of rotation are used to capture energy by the movement of the device heaving and swaying in the waves. This motion drives either an eccentric weight or a gyroscope causes precession. In both cases the movement is attached to an electric generator inside the device.
+					</p>
+				</article>	
+
+				<article>
+					<hgroup>
+						<h4>I) OTHER</h4>
+					</hgroup>					
+					<p>This covers those devices with a unique and very different design to the more well-established types of technology or if information on the device's characteristics could not be determined. For example the Wave Rotor, is a form of turbine turned directly by the waves. Flexible structures have also been suggested, whereby a structure that changes shape/volume is part of the power take-off system.
+					</p>
+				</article>
+
+				<article>
+					<hgroup>
+						<h2>Challenges of WEC Devices</h2>
+					</hgroup>
+					<p>There are still a number of technical challenges to increase the performance and commercial competitiveness of wave energy converters.
+					The energy of wave varies with different amplitudes and frequencies. Converting these various power levels into smooth electrical output is challenging and prediction of average power of wave energy with more accuracy is necessary.</p>
+					<p>
+					Though WEC devices can be designed to operate efficiently in most commonly occurring waves, they have to withstand extreme sea conditions that are very rarely. This will propose some challenging structural problems and significantly enhance the cost of device construction.
+					It is also challenging to undermine the highly corrosive sea environments to the WEC devices.</p>
+					<p>More detailed evaluation of the complete system is necessary if optimized, robust yet efficient systems are to be developed.
+					</p>
+				</article>
+
+
+			</section>
+			
+			<footer>
+				&copy; 2016 Wave Energy Devices (OCEN 678) Yujie Liu, Zhitian Xie
+			</footer>
+		</div><!-- .wrapper -->
+	</body>
+</html>
+
