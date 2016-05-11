@@ -2,6 +2,10 @@
 <html>
 	<head>
 		<title>HTML5 Layout</title>
+		<script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
+		<script type="text/javascript">
+			LatexIT.add('p',true);
+		</script>
 		<style type="text/css">
 			header, section, footer, aside, nav, article, figure, figcaption {
 				display: block;}
@@ -103,9 +107,53 @@
 				float: right;
 				margin-left: 10px;
 				margin-right: 30px;}
+			.align-center {
+				text-align: center; 
+			}
 			img.medium {
 				width: 250px;
-				height: 250px;}				
+				height: 250px;}		
+
+
+
+			table {
+				border-spacing: 0px;}
+			th, td {
+				padding: 5px 30px 5px 10px;
+				border-spacing: 0px;
+				font-size: 90%;
+				margin: 0px;}
+			th, td {
+				text-align: center;
+				background-color: #e0e9f0;
+				border-top: 1px solid #f1f8fe;
+				border-bottom: 1px solid #cbd2d8;
+				border-right: 1px solid #cbd2d8;}
+			tr.head th {
+				color: #fff;
+				background-color: #90b4d6;
+				border-bottom: 2px solid #547ca0;
+				border-right: 1px solid #749abe;
+				border-top: 1px solid #90b4d6;
+				text-align: center;
+				text-shadow: -1px -1px 1px #666666;
+				letter-spacing: 0.15em;}
+			td {
+				text-shadow: 1px 1px 1px #ffffff;}
+			tr.even td, tr.even th {
+				background-color: #e8eff5;}
+			tr.head th:first-child {
+				-webkit-border-top-left-radius: 5px;
+				-moz-border-radius-topleft: 5px;
+				border-top-left-radius: 5px;}
+			tr.head th:last-child {
+				-webkit-border-top-right-radius: 5px;
+				-moz-border-radius-topright: 5px;
+				border-top-right-radius: 5px;}	
+
+			.eqn {
+				text-align: center;
+			}	
 		</style>
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -209,6 +257,217 @@
 					<p>This covers those devices with a unique and very different design to the more well-established types of technology or if information on the device's characteristics could not be determined. For example the Wave Rotor, is a form of turbine turned directly by the waves. Flexible structures have also been suggested, whereby a structure that changes shape/volume is part of the power take-off system.
 					</p>
 				</article>
+
+
+				<article>
+					<hgroup>
+						<h4>Characteristics of WEC devices</h4>
+					</hgroup>					
+					<table>
+						<tr class="head">
+							<th>Device</th>
+							<th>Power per Unit (kW)</th>
+							<th>Movement</th>
+							<th>Depth</th>
+							<th>Size</th>
+						</tr>
+						<tr>
+							<th>Oceantec</th>
+							<td>500</td>
+							<td>heave</td>
+							<td>30-50</td>
+							<td>medium</td>
+						</tr>
+						<tr class="even">
+							<th>Pelamis</th>
+							<td>750</td>
+							<td>surge & heave</td>
+							<td>50-70</td>
+							<td>medium</td>
+						</tr>
+						<tr>
+							<th>P P Converter</th>
+							<td>3620</td>
+							<td>heave</td>
+							<td>deep</td>
+							<td>large</td>
+						</tr>
+						<tr class="even">
+							<th>Seabased</th>
+							<td>15</td>
+							<td>heave</td>
+							<td>deep</td>
+							<td>large</td>
+						</tr>
+						<tr>
+							<th>Wave Dragon</th>
+							<td>7000</td>
+							<td>overtopping</td>
+							<td>30-50</td>
+							<td>large</td>
+						</tr>
+						<tr class="even">
+							<th>Aqua Buoy</th>
+							<td>250</td>
+							<td>heave</td>
+							<td>>50</td>
+							<td>small</td>
+						</tr>
+						<tr>
+							<th>AWS</th>
+							<td>2320</td>
+							<td>heave</td>
+							<td>40-100</td>
+							<td>medium</td>
+						</tr>
+						<tr class="even">
+							<th>Langlee</th>
+							<td>1665</td>
+							<td>oscillating flaps</td>
+							<td>deep</td>
+							<td>medium</td>
+						</tr>	
+						<tr>
+							<th>OE Buoy</th>
+							<td>2800</td>
+							<td>oscilating column</td>
+							<td>deep</td>
+							<td>medium</td>
+						</tr>
+						<tr class="even">
+							<th>Wavebob</th>
+							<td>1000</td>
+							<td>heave</td>
+							<td>deep</td>
+							<td>medium</td>
+						</tr>											
+					</table>
+
+					<figcaption><b>Table 2.1</b> Different types of wave energy conversion devices with characteristics.</figcaption>
+				</article>
+
+
+				<article>
+					<hgroup>
+						<h2>Efficiency Evaluation of Different WEC Devices</h2>
+					</hgroup>
+					<p>
+						Besides the values of the electric power per unit in various periods and locations presented in Figure 2.3 and Table 2.1, there are two different indicators of the efficiency of wave energy transformation into electricity. The first is the load factor $I_L$ defined as the average power capture divided by the device rating. 
+					</p>
+					<div lang="latex" class="eqn">I_{L} = 100 \times P_E/P_{nom}</div>	
+					<p>The second is capture width, which represents the width of wave front from which all the energy is extracted and it is computed as the ratio of electrical power output of the WECSs ($P_E$) to the power in the sea state ($P_W$).</p>
+					<div lang="latex" class="eqn">C_W = P_E/P_W</div>	
+
+					<p>According to the previous research, these two indicators of different WEC devices in various sea environments have been concluded in Table 2.2 and Table 2.3.</p>
+					<img src="images/2_3.jpg" alt="Comparison" class="align-center" />
+					<figcaption><b>Figure-</b> Expected electric power in various coastal environments. (a) Aqua Buoy; (b) Pelamis; (c) Wave Dragon</figcaption>
+
+
+				</article>
+
+				<article>
+				&nbsp;&nbsp;
+					<table>
+						<tr class="head">
+							<th>Il</th>
+							<th colspan="2">Pelamis</th>
+							<th colspan="2">Aqua Buoy</th>
+							<th colspan="2">Wave Dragon</th>
+							
+						</tr>
+						<tr class="head">
+							<th>Location/Period</th>
+							<th>TT</th>
+							<th>WT</th>
+							<th>TT</th>
+							<th>WT</th>
+							<th>TT</th>
+							<th>WT</th>
+						</tr>
+						<tr>
+							<th>Spanish Nearshore</th>
+							<td>15.2-16.9</td>
+							<td>19.3-21.1</td>
+							<td>-</td>
+							<td>-</td>
+							<td>34.5-37.3</td>
+							<td>45.2-48.7</td>
+						</tr>
+						<tr>
+							<th>Sea Environment</th>
+							<td>-</td>
+							<td>11.9-13.07</td>
+							<td>-</td>
+							<td>8.4-9.5</td>
+							<td>-</td>
+							<td>8.2-12.78</td>
+						</tr>
+					</table>
+					<figcaption><b>Table 2.2</b> Average values of the load factor in the Spanish nearshore and in sea environment (the Black and the North seas). The WECs considered are: Pelamis, Aqua Buoy and Wave Dragon. (TT indicates the total time and WT indicates the winter time)</figcaption>
+
+				</article>
+
+				<article>
+					&nbsp;
+					<table>
+						<tr class="head">
+							<th>Cw(m)</th>
+							<th colspan="2">Pelamis</th>
+							<th colspan="2">Aqua Buoy</th>
+							<th colspan="2">Wave Dragon</th>
+							
+						</tr>
+						<tr class="head">
+							<th>Location/Period</th>
+							<th>TT</th>
+							<th>WT</th>
+							<th>TT</th>
+							<th>WT</th>
+							<th>TT</th>
+							<th>WT</th>
+						</tr>
+						<tr>
+							<th>Spanish Nearshore</th>
+							<td>3.98-4.13</td>
+							<td>2.80-2.93</td>
+							<td>-</td>
+							<td>-</td>
+							<td>69.42-73.05</td>
+							<td>51-53.77</td>
+						</tr>
+						<tr>
+							<th>Portuguese Nearshore</th>
+							<td>3.3-4.2</td>
+							<td>3.0-3.7</td>
+							<td>1.2-1.5</td>
+							<td>1.1-1.4</td>
+							<td>33.1-39.2</td>
+							<td>32.0-38.0</td>
+						</tr>
+						<tr>
+							<th>Maderia Archipelago</th>
+							<td>-</td>
+							<td>1.61-2.62</td>
+							<td>-</td>
+							<td>0.77-0.78</td>
+							<td>-</td>
+							<td>22.28-25.14</td>
+						</tr>
+					</table>	
+					<figcaption><b>Table 2.3</b> Average values of the capture width Cw (m) in the Iberian nearshore (Spanish and Portuguese) and in Madeira archipelago. The WECs considered are Pelamis, Aqua Buoy and Wave Dragon.</figcaption>				
+				</article>
+				<article>
+					
+
+					<p>	The results in Table 2.2 show that the Wave Dragon appears to be the most effective device with a maximum value of the load factor of 48.7, in comparison with Pelamis and Aqua Buoy. Table 2.3 can present a picture of the power capture efficiency in certain area for a certain device. The capture width is quite large from one environment to another. Another observation would be that the values of this index are lower for WT in comparison with TT, which means that, although in winter time the wave energy is higher, the efficiency of its transformation into electricity is lower. This phenomenon that the wave energy in winter is more scattered along the sea states may be one of the reasons.</p>
+
+					<p>From this perspective, it can be considered that the Wave Dragon, appears to be suitable for more sea conditions with higher energy capture efficiency and higher transform efficiency, compared with Pelamis and Aqua Buoy. Moreover, according to the previous research, the investment per installed kW will be around 2.5 kEUR and the predicted price for WD-power from the North Sea will be around 0.1 EUR/kWh. While the power levels at other locations offshore of Europe are more than 3 times the values in the Danish part of the North Sea. A WD scaled for and deployed at such locations is therefore expected to be able to produce power at a considerably lower price.</p>
+				</article>
+
+
+
+
+
 
 				<article>
 					<hgroup>
